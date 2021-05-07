@@ -6,11 +6,13 @@ This form also checks the pin-code you entered and automatically fills the **Dis
 This has been done by hitting the GET request on this **https://api.postalpincode.in/pincode/${pincode}** url where the pincode is the pincode provided by you.
 ***
 ### screenshots
-1. Pincode validation:
+1.  Full Form:
+![Fullform](screenshots/registerformpic.png)
+2. Pincode validation:
 ![pincodeval1](screenshots/pincodefound1.png)
 ![pincodeval2](screenshots/pincodefound2.png)
 ***
-2. Password Validation:
+3. Password Validation:
 ![Passwordval1](screenshots/passwordvalidation1.png)
 ![Passwordval2](screenshots/passwordvalidation2.png)
 ***
