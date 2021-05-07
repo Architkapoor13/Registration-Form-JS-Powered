@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+        body {
+            padding: 10px;
+        }
+
+        h6
+        {
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Register</h2>
+
+<!--    {% if message %}-->
+<!--        <div class="alert alert-primary alert-dismissible fade show" role="alert">-->
+<!--          {{ message }}-->
+<!--          <button type="button" class="close" data-dismiss="alert" aria-label="Close">-->
+<!--            <span aria-hidden="true">&times;</span>-->
+<!--          </button>-->
+<!--        </div>-->
+<!--    {% endif %}-->
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <h6 id="username-message"></h6>
+            <input class="form-control" autofocus type="text" name="username" placeholder="Username" id="username" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <h3>Address</h3>
+        <div style="font-size: 10px;">
+                <h6 id="pincode-message"></h6>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-2" style="padding-right: 50px; padding-left: 15px;">
+                <input class="form-control" type="number" placeholder="Pin-code" name="pincode" id="pincode">
+            </div>
+            <div class="col-xs-3" style="padding-right: 50px; padding-left: 15px;">
+                <input class="form-control" placeholder="District" name="district" id="district" >
+            </div>
+            <div class="col-xs-3" style="padding-right: 50px; padding-left: 15px;">
+                <input class="form-control" placeholder="City" name="city" >
+            </div>
+        </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="Address Line 1" name="addressline1">
+        </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="Address Line 2(optional)" name="addressline2">
+        </div>
+        <h3>Password</h3>
+        <div style="color: red;">
+            <h6 id="chars">Password must be at-least 8 characters long</h6>
+            <h6 id="upperlower">Passwords must contain uppercase and lowercase characters</h6>
+            <h6 id="number">Passwords must contain numbers as well</h6>
+            <h6 id="special">Passwords must contain one or more special characters e.g- @, #, $, etc.</h6>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password" id="password" required>
+        </div>
+        <div class="form-group">
+            <h6 id="confirmpassmess"></h6>
+            <input class="form-control" type="password" name="confirmation" placeholder="Confirm Password" id="confirm-pass" required>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Register" id="register">
+    </form>
+
+    Already have an account? <a href="#">Log In here.</a>
+</body>
+</html>
